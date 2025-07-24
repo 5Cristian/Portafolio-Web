@@ -1,29 +1,82 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inicio | Cristian Claudio</title>
+  <title>Portafolio | Cristian Claudio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <header class="bg-blue-700 text-white p-5 text-center">
-    <h1 class="text-4xl font-bold">Cristian Claudio</h1>
-    <p class="text-lg">Desarrollador de Software</p>
-    <nav class="mt-4">
-      <a href="index.html" class="mx-2 hover:underline">Inicio</a>
-      <a href="sobre-mi.html" class="mx-2 hover:underline">Sobre Mí</a>
-      <a href="portafolio.html" class="mx-2 hover:underline">Portafolio</a>
-    </nav>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-blue-700 text-white py-6 shadow-lg">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+      <h1 class="text-3xl md:text-4xl font-bold text-center md:text-left">Mis Proyectos</h1>
+      <nav class="mt-4 md:mt-0 space-x-4 md:space-x-6 text-center">
+        <a href="index.html" class="hover:underline">Inicio</a>
+        <a href="sobre-mi.html" class="hover:underline">Sobre Mí</a>
+        <a href="portafolio.html" class="hover:underline">Proyectos</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="p-10 text-center">
-    <h2 class="text-2xl font-semibold mb-4">¡Bienvenido a mi portafolio web!</h2>
-    <p class="text-lg">Aquí podrás conocer más sobre mí y los proyectos que he desarrollado, durante el proceso de aprendizaje de la carrera de ingenieria en sistemas.</p>
+  <main class="p-6 md:p-10 max-w-6xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8 md:mb-10">Proyectos Destacados</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+
+      <!-- Proyecto 1 -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-5">
+        <img src="img/FinanPro_Icon.jpg" alt="Gastos Personales" class="rounded-lg mb-3 w-full h-48 object-cover" />
+        <h3 class="text-xl font-semibold mb-2">Gestión de Gastos Personales</h3>
+        <p class="text-gray-700">Sistema en Java y MySQL que permite llevar un control mensual de gastos, presupuestos y préstamos.</p>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-5">
+        <img src="img/puntoVenta.jpg" alt="Punto de venta" class="rounded-lg mb-3 w-full h-48 object-cover" />
+        <h3 class="text-xl font-semibold mb-2">Sistema de Punto de Venta</h3>
+        <p class="text-gray-700">Controla el inventario, ventas y compras en un entorno fácil de usar. Proyecto funcional y escalable.</p>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-5">
+        <div class="space-y-2 mb-3">
+          <img src="img/robot1.jpg" alt="Robot 1" class="rounded-lg w-full h-24 object-cover" />
+          <img src="img/robot2.jpg" alt="Robot 2" class="rounded-lg w-full h-24 object-cover" />
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Robot Arduino + Sensores</h3>
+        <p class="text-gray-700">Robot de juguete que evita obstáculos, gira 360°, mide distancias y muestra datos en pantalla LCD.</p>
+      </div>
+
+      <!-- Proyecto 4 -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-5">
+        <img src="img/logo1.png" alt="Veterinaria" class="rounded-lg mb-3 w-full h-48 object-cover" />
+        <h3 class="text-xl font-semibold mb-2">Sistema Veterinaria</h3>
+        <p class="text-gray-700">Gestión completa de pacientes (animales), historial clínico y citas médicas. Realizado en Programación II.</p>
+      </div>
+
+      <!-- Proyecto 5 -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-5">
+        <img src="img/AscensorArduino1.jpg" alt="Ascensor Arduino" class="rounded-lg mb-3 w-full h-48 object-cover" />
+        <h3 class="text-xl font-semibold mb-2">Ascensor con Arduino</h3>
+        <p class="text-gray-700">Simula un ascensor automatizado con botones, servomotores, selección de pisos y pantalla de visualización.</p>
+      </div>
+
+    </div>
   </main>
 
-  <footer class="bg-blue-700 text-white text-center p-4 mt-10">
-    &copy; 2025 Cristian Claudio
+  <footer class="bg-blue-700 text-white text-center py-6 mt-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <p class="mb-2">&copy; 2025 Cristian Claudio</p>
+      <div class="flex justify-center gap-6 text-lg">
+        <a href="mailto:cristian@example.com" class="hover:text-yellow-300" aria-label="Enviar correo electrónico">📧 Email</a>
+        <a href="https://github.com/tuusuario" target="_blank" class="hover:text-yellow-300" aria-label="GitHub">💻 GitHub</a>
+        <a href="https://www.linkedin.com/in/tuusuario" target="_blank" class="hover:text-yellow-300" aria-label="LinkedIn">🔗 LinkedIn</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
+
