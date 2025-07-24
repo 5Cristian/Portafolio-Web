@@ -2,33 +2,53 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sobre Mí | Cristian Claudio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800">
-  <header class="bg-blue-700 text-white p-5 text-center">
-    <h1 class="text-4xl font-bold">Sobre Mí</h1>
-    <nav class="mt-4">
-      <a href="index.html" class="mx-2 hover:underline">Inicio</a>
-      <a href="sobre-mi.html" class="mx-2 hover:underline">Sobre Mí</a>
-      <a href="portafolio.html" class="mx-2 hover:underline">Portafolio</a>
-    </nav>
+  <header class="bg-blue-700 text-white p-4 sm:p-5 text-center shadow">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-3xl sm:text-4xl font-bold">Sobre Mí</h1>
+      <nav class="mt-3">
+        <a href="index.html" class="mx-2 hover:underline">Inicio</a>
+        <a href="sobre-mi.html" class="mx-2 hover:underline">Sobre Mí</a>
+        <a href="portafolio.html" class="mx-2 hover:underline">Proyectos</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="p-10 max-w-2xl mx-auto">
-    <h2 class="text-2xl font-semibold mb-4">¿Quién soy?</h2>
-    <p class="mb-4">Soy estudiante de Ingeniería en Sistemas. Me gusta aprender nuevas tecnologías y construir soluciones útiles.</p>
-    <h3 class="text-xl font-semibold mt-6 mb-2">Tecnologías que manejo:</h3>
-    <ul class="list-disc pl-6">
-      <li>HTML5, CSS3, JavaScript</li>
-      <li>Java, MySQL</li>
-      <li>Tailwind CSS, Git & GitHub</li>
-    </ul>
+  <main class="p-6 sm:p-10 max-w-4xl mx-auto">
+    <section class="bg-white rounded-lg shadow p-5 sm:p-6">
+      <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-blue-700">¿Quién soy?</h2>
+      <p class="mb-4 leading-relaxed text-base sm:text-lg">
+        Soy estudiante de Ingeniería en Sistemas apasionado por la programación y el desarrollo de software. Desde mis primeros cursos descubrí el entusiasmo por construir soluciones que sean funcionales, prácticas y eficientes.
+        Me gusta aprender constantemente nuevas tecnologías y enfrentar desafíos que pongan a prueba mis habilidades técnicas y creativas. Disfruto trabajar en equipo, compartir conocimientos y crear aplicaciones que resuelvan problemas reales.
+      </p>
+
+      <h3 class="text-lg sm:text-xl font-semibold text-blue-700 mt-6 mb-4">Tecnologías que manejo:</h3>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-base sm:text-lg text-gray-800">
+        <li class="flex items-center"><span class="mr-2">💻</span> HTML5</li>
+        <li class="flex items-center"><span class="mr-2">🎨</span> CSS3</li>
+        <li class="flex items-center"><span class="mr-2">⚙️</span> JavaScript</li>
+        <li class="flex items-center"><span class="mr-2">☕</span> Java</li>
+        <li class="flex items-center"><span class="mr-2">🛢️</span> MySQL</li>
+        <li class="flex items-center"><span class="mr-2">🌐</span> Tailwind CSS</li>
+        <li class="flex items-center"><span class="mr-2">🔧</span> Git</li>
+        <li class="flex items-center"><span class="mr-2">🐙</span> GitHub</li>
+      </ul>
+
+      <h3 class="text-lg sm:text-xl font-semibold text-blue-700 mt-6 mb-4">Otros intereses:</h3>
+      <p class="text-gray-700 text-base sm:text-lg">
+        Me interesa la inteligencia artificial, la robótica, el diseño de interfaces, y el desarrollo de software educativo. También disfruto de la electrónica con Arduino y explorar nuevas herramientas que puedan hacer mis proyectos más innovadores.
+      </p>
+    </section>
   </main>
 
   <footer class="bg-blue-700 text-white text-center p-4 mt-10">
-    &copy; 2025 Cristian Claudio
+    <div class="max-w-4xl mx-auto px-4">
+      &copy; 2025 Cristian Claudio
+    </div>
   </footer>
 </body>
 </html>
